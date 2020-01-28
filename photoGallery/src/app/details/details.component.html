@@ -1,0 +1,16 @@
+<div class="row">
+    <div class=col-md-12>
+      <div [ngStyle]="{'background-image':'url('+ formatImage(image.name) +')'}" class="img-container paper">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 caption-row">
+         <h4>Details</h4>
+         <p><b>Image Name:</b> {{image.name}}</p> 
+         <p *ngIf="image.album_name"><b>Album:</b> {{image.album_name}}</p> 
+         <p *ngIf="!image.album_name"><b>Album:</b> None.</p> 
+         <p><b>Date  Uploaded:</b> {{image.date}}</p>
+      </div>
+  </div>
+  

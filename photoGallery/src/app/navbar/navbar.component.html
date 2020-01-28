@@ -1,0 +1,17 @@
+<div class="row">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand logo" href="#">{{ title }}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <div class="search-container">
+            <input type="text" placeholder="Search.." (keyup)="keyEvent($event.target.value)"  name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+  

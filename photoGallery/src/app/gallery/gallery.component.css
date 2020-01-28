@@ -1,0 +1,91 @@
+ul { padding:0; width:1200px; margin:20px auto}
+li { display:inline;}
+    .tn{
+ margin:6px 6px;
+ border: 4px solid #eee;
+ box-shadow:#555 1px 1px 8px 1px;
+ cursor: pointer
+    }
+
+ .tn.jiggle-effect:hover {
+  content: url('/assets/img/delete-icon.png');
+   
+ }   
+.modal-content {
+  width: 1200px !important;
+}
+
+h1, h2{
+    margin-bottom: 20px;
+}
+
+.hr-4 {
+  border-top: 1px solid lightgrey !important;
+}
+
+.hidden { 
+  display: none;
+}
+
+.separator {
+   border-left: 1px solid lightgrey;
+   border-right: 1px solid lightgrey;
+}
+
+.pull-left {
+  float:left !important;
+}
+
+.pull-right {
+  float:right !important;
+}
+
+.m-t-xs {
+  margin-top: 4px;
+}
+/**** JIGGLE IOS EFFECT: Credits to taylor Liesnham in codepen.io --> https://codepen.io/Chub/pen/tihpG ****/
+
+.jiggle-effect {
+  animation: jiggle 0.2s infinite;
+	-webkit-animation: jiggle 0.2s infinite;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-name: jiggle;
+    -moz-animation-iteration-count: infinite;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+}
+
+@keyframes jiggle {
+  0% {
+      transform: rotate(-1deg);
+}
+50% {
+    transform: rotate(1deg);
+}
+}
+
+@-webkit-keyframes jiggle {
+  0% {
+      -webkit-transform: rotate(-1deg);
+}
+50% {
+    -webkit-transform: rotate(1deg);
+}
+}
+
+@-moz-keyframes jiggle {
+  0% {
+      -moz-transform: rotate(-1deg);
+}
+50% {
+  -moz-transform: rotate(1deg);
+}
+}
+
+@media only screen and (max-width: 992px) {
+   
+  .separator {
+    border:none;
+  }
+
+}
